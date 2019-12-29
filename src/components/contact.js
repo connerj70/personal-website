@@ -8,9 +8,10 @@ const Contact = () => {
       </h1>
       <form
         className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full"
-        method="post"
+        method="POST"
         netlify-honeypot="bot-field"
         data-netlify="true"
+        name="contact"
       >
         <div className="mb-4">
           <label
