@@ -24,6 +24,7 @@ const Contact = () => {
             className="shadow appearance-none border ounded w-full lg:w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="name"
             type="text"
+            name="name"
             placeholder="name"
           />
         </div>
@@ -39,6 +40,7 @@ const Contact = () => {
             id="email"
             type="text"
             placeholder="email"
+            name="email"
           />
         </div>
         <div className="mb-4">
@@ -53,6 +55,7 @@ const Contact = () => {
             id="subject"
             type="text"
             placeholder="subject"
+            name="subject"
           />
         </div>
         <div className="mb-4">
@@ -67,6 +70,7 @@ const Contact = () => {
             id="message"
             type="text"
             placeholder="message"
+            name="message"
           />
         </div>
         <button
