@@ -13,15 +13,13 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const ConnerImage = () => {
+const ComingImage = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "conner.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "coming.jpg" }) {
         childImageSharp {
-          # Specify the image processing specifications right in the query.
-          # Makes it trivial to update as your page's design changes.
-          fixed(width: 300, height: 300) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -29,8 +27,11 @@ const ConnerImage = () => {
   `)
 
   return (
-    <Img className="rounded-full" fixed={data.file.childImageSharp.fixed} />
+    <Img
+      className="mt-2 max-w-md"
+      fluid={data.placeholderImage.childImageSharp.fluid}
+    />
   )
 }
 
-export default ConnerImage
+export default ComingImage

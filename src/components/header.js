@@ -2,15 +2,16 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 import { FaBars } from "react-icons/fa"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Header = ({ siteTitle }) => {
-  const [showHeader, setShowHeader] = useState(true)
-  const headerLinks = ["about", "skills", "portfolio", "contact"]
+  const [showHeader, setShowHeader] = useState(false)
+  const headerLinks = ["ABOUT", "SKILLS", "PORTFOLIO", "CONTACT"]
   return (
-    <header className="text-white max-w-xs lg:flex-grow bg-black">
+    <header className="text-white max-w-md lg:flex-grow bg-black">
       <div
         className={
-          "fixed w-10 h-10 bg-black flex justify-center items-center rounded-r lg:hidden" +
+          "z-10 fixed w-12 h-12 bg-black flex justify-center items-center rounded-br lg:hidden" +
           (showHeader ? " hidden" : "")
         }
         onClick={() => setShowHeader(true)}
@@ -29,9 +30,19 @@ const Header = ({ siteTitle }) => {
         >
           X
         </span>
-        <ul className="p-10">
+        <ul className="p-10 fixed">
           {headerLinks.map(item => {
-            return <li className="cursor-pointer">{item}</li>
+            return (
+              <li
+                onClick={() => {
+                  scrollTo(`#${item.toLowerCase()}`)
+                  setShowHeader(false)
+                }}
+                className="cursor-pointer mb-6 hover:text-c-orange lg:text-2xl"
+              >
+                {item}
+              </li>
+            )
           })}
         </ul>
       </div>

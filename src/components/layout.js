@@ -26,8 +26,8 @@ const Layout = ({ children }) => {
   return (
     <div className="lg:flex">
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="lg:flex-grow p-10">
-        <main>{children}</main>
+      <div className="flex-col lg:flex-grow p-10 justify-center items-center">
+        <main style={{ margin: "0 auto", maxWidth: "900px" }}>{children}</main>
         <footer></footer>
       </div>
     </div>

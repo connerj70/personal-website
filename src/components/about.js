@@ -3,11 +3,15 @@ import ConnerImage from "../components/conner-image"
 
 const About = () => {
   return (
-    <div>
-      <h1 className="text-4xl underline">About</h1>
-      <ConnerImage />
+    <div className="flex flex-col justify-center">
+      <h1 className="text-4xl underline" id="about">
+        About
+      </h1>
+      <div className="max-w-md">
+        <ConnerImage />
+      </div>
       <div className="leading-loose text-left">
-        <h2 className="text-3xl mt-6 text-center">
+        <h2 className="text-3xl mt-6 text-center lg:text-left lg:text-4xl">
           Hello! I'm{" "}
           <span className="font-semibold text-c-orange">Conner.</span>
         </h2>
