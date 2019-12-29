@@ -24,13 +24,13 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="lg:flex">
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div>
+      <div className="lg:flex-grow p-10">
         <main>{children}</main>
         <footer></footer>
       </div>
-    </>
+    </div>
   )
 }
 

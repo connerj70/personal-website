@@ -7,11 +7,11 @@ const Header = ({ siteTitle }) => {
   const [showHeader, setShowHeader] = useState(true)
   const headerLinks = ["about", "skills", "portfolio", "contact"]
   return (
-    <header className="text-white">
+    <header className="text-white max-w-xs lg:flex-grow bg-black">
       <div
         className={
-          "fixed w-10 h-10 bg-black flex justify-center items-center rounded-r" +
-          (showHeader ? " invisible" : " visible")
+          "fixed w-10 h-10 bg-black flex justify-center items-center rounded-r lg:hidden" +
+          (showHeader ? " hidden" : "")
         }
         onClick={() => setShowHeader(true)}
       >
@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => {
       </div>
       <div
         className={
-          "fixed w-3/4 md:w-1/4 lg:1/6 h-screen bg-black lg:visible" +
+          "z-10 fixed w-3/4 md:w-1/4 lg:w-full lg:static h-screen bg-black lg:visible" +
           (showHeader ? " visible" : " invisible")
         }
       >
@@ -29,7 +29,7 @@ const Header = ({ siteTitle }) => {
         >
           X
         </span>
-        <ul className="p-10 mt-5">
+        <ul className="p-10">
           {headerLinks.map(item => {
             return <li className="cursor-pointer">{item}</li>
           })}
