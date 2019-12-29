@@ -70,7 +70,7 @@ const Contact = () => {
         </div>
         <button
           className="bg-black hover:bg-c-orange text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          type="button"
+          type="submit"
         >
           Send Message
         </button>
