@@ -27,7 +27,7 @@ const CoinImage = () => {
   `)
 
   return (
-    <a href="http://104.248.66.9/#/" target="_blank">
+    <a href="http://104.248.66.9/#/">
       <Img
         className="max-w-md"
         fluid={data.placeholderImage.childImageSharp.fluid}
