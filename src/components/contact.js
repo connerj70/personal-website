@@ -10,11 +10,12 @@ const Contact = () => {
       <p className="mb-2">Or shoot me a quick message below 👍</p>
       <form
         className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
-        name="communication"
+        name="contact2"
         method="POST"
         netlify
         action="/"
       >
+        <input type="hidden" name="form-name" value="contact2" />
         <p>
           <label className="block text-gray-700 text-sm font-bold mb-2">
             Your Name: <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name="name" />
