@@ -17,6 +17,10 @@ const Portfolio = () => {
             This was built using React.js and Node.js as well as CSS grid and
             flexbox. It makes use of sockets to continuously pull in live data
             about crypto currency prices and graphs them using chart.js
+            <br />
+            <span className="text-red-600">
+              *Note this was not built to be compatible with mobile devices
+            </span>
           </p>
           <CoinImage />
         </div>

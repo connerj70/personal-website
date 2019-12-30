@@ -25,7 +25,7 @@ const Header = ({ siteTitle }) => {
         }
       >
         <span
-          className="fixed ml-4 mt-4 lg:invisible"
+          className="z-10 fixed ml-4 mt-4 lg:invisible"
           onClick={() => setShowHeader(false)}
         >
           X

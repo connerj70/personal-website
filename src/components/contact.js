@@ -7,77 +7,33 @@ const Contact = () => {
         Contact Me
       </h1>
       <form
-        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full"
+        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+        name="contact"
         method="POST"
         data-netlify="true"
-        name="contact"
       >
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            for="name"
-          >
-            Name
+        <p>
+          <label className="block text-gray-700 text-sm font-bold mb-2">
+            Your Name: <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name="name" />
           </label>
-          <input
-            className="shadow appearance-none border ounded w-full lg:w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="name"
-            type="text"
-            name="name"
-            placeholder="name"
-          />
-        </div>
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            for="email"
-          >
-            Email
+        </p>
+        <p>
+          <label className="block text-gray-700 text-sm font-bold mb-2">
+            Your Email: <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" name="email" />
           </label>
-          <input
-            className="shadow appearance-none border ounded w-full lg:w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="email"
-            type="text"
-            placeholder="email"
-            name="email"
-          />
-        </div>
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            for="subject"
-          >
-            Subject
+        </p>
+        <p>
+          <label className="block text-gray-700 text-sm font-bold mb-2">
+            Message:{" "}
+            <textarea
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              name="message"
+            ></textarea>
           </label>
-          <input
-            className="shadow appearance-none border ounded w-full lg:w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="subject"
-            type="text"
-            placeholder="subject"
-            name="subject"
-          />
-        </div>
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            for="message"
-          >
-            Message
-          </label>
-          <textarea
-            className="shadow appearance-none border ounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="message"
-            type="text"
-            placeholder="message"
-            name="message"
-          />
-        </div>
-        <button
-          className="bg-black hover:bg-c-orange text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          type="submit"
-        >
-          Send Message
-        </button>
+        </p>
+        <p>
+          <button className="bg-black hover:bg-c-orange text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Send</button>
+        </p>
       </form>
     </div>
   )
