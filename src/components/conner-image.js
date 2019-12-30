@@ -16,7 +16,7 @@ import Img from "gatsby-image"
 const ConnerImage = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "conner.jpg" }) {
+      file(relativePath: { eq: "images/conner.jpg" }) {
         childImageSharp {
           # Specify the image processing specifications right in the query.
           # Makes it trivial to update as your page's design changes.
