@@ -8,7 +8,7 @@ const Portfolio = () => {
       <h1 className="text-4xl mt-6 underline" id="portfolio">
         Portfolio
       </h1>
-      <a href="/resume.pdf" download>Download Resume</a>
+      <a className="text-c-orange" href="/resume.pdf" download>Download Resume</a>
       <div className="flex flex-col justify-center">
         <div className="lg:max-w-md">
           <h2 className="text-2xl font-semibold text-c-orange mt-4">
