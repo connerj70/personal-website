@@ -8,9 +8,9 @@ const Contact = () => {
       </h1>
       <p>Email me at: <span className="text-c-orange">connerj70@gmail.com</span></p>
       <p className="mb-2">Or shoot me a quick message below 👍</p>
-      {/* <form
+      <form
         className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
-        name="contact"
+        name="working-contact"
         method="POST"
         netlify
       >
@@ -36,27 +36,7 @@ const Contact = () => {
         <p>
           <button className="bg-black hover:bg-c-orange text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Send</button>
         </p>
-      </form> */}
-      <form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+      </form>
     </div>
   )
 }
