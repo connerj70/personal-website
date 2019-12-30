@@ -10,9 +10,10 @@ const Contact = () => {
       <p className="mb-2">Or shoot me a quick message below 👍</p>
       <form
         className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
-        name="working-contact"
+        name="communication"
         method="POST"
         netlify
+        action="/"
       >
         <p>
           <label className="block text-gray-700 text-sm font-bold mb-2">
