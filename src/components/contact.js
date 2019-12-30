@@ -6,11 +6,13 @@ const Contact = () => {
       <h1 className="text-4xl mt-6 underline mb-6" id="contact">
         Contact Me
       </h1>
+      <p>Email me at: <span className="text-c-orange">connerj70@gmail.com</span></p>
+      <p className="mb-2">Or shoot me a quick message below 👍</p>
       <form
         className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
         name="contact"
         method="POST"
-        data-netlify="true"
+        netlify
       >
         <p>
           <label className="block text-gray-700 text-sm font-bold mb-2">
