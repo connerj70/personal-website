@@ -13,15 +13,14 @@ export default function Template({
   return (
     <Layout>
       <SEO title="Blog" />
-      <div className="flex justify-center flex-col m-auto">
+      <div className="flex justify-center flex-col m-auto max-w-3xl">
         <div className="blog-post">
           <Img
-            className="max-w-2xl"
             fluid={
               markdownRemark.frontmatter.featuredImage.childImageSharp.fluid
             }
           />
-          <h1 className="text-4xl font-bold">{frontmatter.title}</h1>
+          <h1 className="text-4xl font-bold mt-2">{frontmatter.title}</h1>
           <h2 className="italic">{frontmatter.date}</h2>
           <div
             className="blog-post-content mt-6"
