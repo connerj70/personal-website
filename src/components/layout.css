@@ -3,3 +3,13 @@
 @tailwind components;
 
 @tailwind utilities;
+
+h3 {
+  font-size: 22px;
+  color: #f5ac72;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 30px;
+}
