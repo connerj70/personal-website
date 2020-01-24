@@ -7,9 +7,22 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `src`,
+        name: `markdown`,
         path: `${__dirname}/src`,
       },
     },
@@ -29,7 +42,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-smoothscroll`,
