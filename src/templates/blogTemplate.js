@@ -16,7 +16,6 @@ export default function Template({
     shortname: process.env.GATSBY_DISQUS_NAME,
     config: {identifier: frontmatter.title}
   }
-  console.log("gatsby name", process.env.GATSBY_DISQUS_NAME)
   return (
     <Layout>
       <SEO title="Blog" />
