@@ -8,6 +8,8 @@ h3 {
   font-size: 22px;
   color: #f5ac72;
   font-weight: bold;
+  border-bottom: 1px solid #f5ac72;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -18,5 +20,4 @@ h4 {
 
 p {
   margin-bottom: 30px;
-  line-height: 200%;
 }

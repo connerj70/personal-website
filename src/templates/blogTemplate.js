@@ -3,13 +3,20 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import {DiscussionEmbed} from "disqus-react"
+
+
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
-  console.log(data)
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
+  const disqusConfig = {
+    shortname: process.env.GATSBY_DISQUS_NAME,
+    config: {identifier: frontmatter.title}
+  }
+  console.log("gatsby name", process.env.GATSBY_DISQUS_NAME)
   return (
     <Layout>
       <SEO title="Blog" />
@@ -26,6 +33,7 @@ export default function Template({
             className="blog-post-content mt-6"
             dangerouslySetInnerHTML={{ __html: html }}
           />
+          <DiscussionEmbed {...disqusConfig} />
         </div>
       </div>
     </Layout>
