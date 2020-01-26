@@ -13,10 +13,10 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const CoinImage = () => {
+const AgilityImage = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "images/coin.png" }) {
+      placeholderImage: file(relativePath: { eq: "images/agility.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
@@ -27,7 +27,7 @@ const CoinImage = () => {
   `)
 
   return (
-    <a href="http://104.248.66.9/#/">
+    <a href="https://app.agilityads.com">
       <Img
         className="max-w-md"
         fluid={data.placeholderImage.childImageSharp.fluid}
@@ -36,4 +36,4 @@ const CoinImage = () => {
   )
 }
 
-export default CoinImage
+export default AgilityImage
