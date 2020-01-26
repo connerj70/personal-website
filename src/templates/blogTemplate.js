@@ -16,7 +16,7 @@ export default function Template({
   }
   return (
     <BlogLayout categories={data.allMarkdownRemark.group}>
-      <div className="flex justify-center flex-col m-auto max-w-3xl mt-4">
+      <div className="flex justify-center flex-col m-auto max-w-3xl mt-8">
         <div className="blog-post">
           <Img
             fluid={
@@ -25,6 +25,8 @@ export default function Template({
           />
           <h1 className="text-4xl font-bold mt-2">{frontmatter.title}</h1>
           <h2 className="italic">{frontmatter.date}</h2>
+          <h2 className="text-xs italic mt-2">Time To Read: <span className="text-c-orange font-bold">{markdownRemark.timeToRead} Minutes</span></h2>
+          <h2 className="text-xs italic">Author: <span className="text-c-orange font-bold">Conner Jensen</span></h2>
           <div
             className="blog-post-content mt-6"
             dangerouslySetInnerHTML={{ __html: html }}
@@ -51,6 +53,10 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+      timeToRead
+      wordCount {
+        words
       }
     }
     allMarkdownRemark {

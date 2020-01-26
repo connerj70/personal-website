@@ -8,7 +8,7 @@ const BlogSidebar = ({ categories }) => {
     <div className="mt-4 mb-4 md:w-2/5 md:ml-4 border-l pl-8">
       {/* <div className="border w-full h-40">Advertisement</div> */}
       <BlogEmailOffer />
-      {/* <BlogCategories categories={categories} /> */}
+      <BlogCategories categories={categories} />
     </div>
   )
 }

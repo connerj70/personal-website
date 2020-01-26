@@ -50,12 +50,12 @@ const BlogLayout = ({ children, categories }) => {
       {showScroll ? (
         <div
           onClick={() => backToTop()}
-          className="cursor-pointer bg-gray-500 text-white rounded-full fixed z-10 bottom-0 right-0 mr-5 mb-5 p-5"
+          className="flex justify-center items-center cursor-pointer bg-gray-500 text-white text-3xl w-12 h-12 rounded-full fixed z-10 bottom-0 right-0 mr-5 mb-5 p-5"
         >
           ^
         </div>
       ) : null}
-      {/* <BlogPopup show={showPopup} setShowPopup={setShowPopup} /> */}
+      <BlogPopup show={showPopup} setShowPopup={setShowPopup} />
     </div>
   )
 }
