@@ -6,19 +6,59 @@ const BlogEmailOffer = () => {
       style={{ top: "110px" }}
       className="cool-gradient rounded text-white border p-4 mt-4 w-full mb-4 sticky"
     >
-      Join 28,141 other programmers
-      <p className="text-black">
-        Get programming and business tips, delivered to your inbox
-      </p>
-      <input
-        className="mb-2 p-2 mr-2 text-black"
-        type="text"
-        placeholder="first name"
-      />
-      <input className="mb-2 p-2 text-black" type="text" placeholder="email" />
-      <button className="pl-4 pr-4 pt-2 pb-2 rounded bg-blue-500 hover:bg-blue-700">
-        Subscribe
-      </button>
+      <div className="w-9/12 lg:w-10/12 m-auto">
+        <h2 className="text-center text-2xl font-bold">
+          Join thousands of other programmers
+        </h2>
+        <p className="text-black mt-2 text-center">
+          Get programming and business tips, delivered to your inbox
+        </p>
+        <form
+          name="emailList"
+          method="POST"
+          netlify="true"
+          netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="emailList" />
+          <p class="hidden">
+            <label>
+              Don’t fill this out if you're human: <input name="bot-field" />
+            </label>
+          </p>
+          <p>
+            <label className="block text-white text-sm font-bold mb-2">
+              Your Name:{" "}
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                type="text"
+                name="name"
+              />
+            </label>
+          </p>
+          <p>
+            <label className="block text-white text-sm font-bold mb-2">
+              Your Email:{" "}
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                type="email"
+                name="email"
+              />
+            </label>
+          </p>
+          <p>
+            <button
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+              type="submit"
+            >
+              Subscribe
+            </button>
+          </p>
+          <p className="text-xs text-center">
+            By subscribing, you acknowledge to have read & agreed to our Privacy
+            Policy.
+          </p>
+        </form>
+      </div>
     </div>
   )
 }

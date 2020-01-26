@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const BlogFooter = () => {
   return (
-    <div className="w-full h-20 bg-black p-4">
+    <div className="w-full h-20 bg-black p-4 mt-4">
       <ul className="flex-initial flex-col text-white content-center justify-center">
         <li className="text-xl">
           <Link to="/">

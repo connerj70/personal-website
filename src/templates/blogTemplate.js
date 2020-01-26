@@ -15,8 +15,8 @@ export default function Template({
     config: { identifier: frontmatter.title },
   }
   return (
-    <BlogLayout>
-      <div className="flex justify-center flex-col m-auto max-w-3xl">
+    <BlogLayout categories={data.allMarkdownRemark.group}>
+      <div className="flex justify-center flex-col m-auto max-w-3xl mt-4">
         <div className="blog-post">
           <Img
             fluid={
@@ -51,6 +51,12 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+    }
+    allMarkdownRemark {
+      group(field: frontmatter___tags) {
+        tag: fieldValue
+        totalCount
       }
     }
   }

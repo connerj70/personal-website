@@ -8,9 +8,6 @@ const BlogHeader = ({ siteTitle }) => {
         <span className="text-c-orange">CONNER</span>JENSEN
       </Link>
       <ul className="pl-4 flex flex-row flex-initial">
-        <li className="cursor-pointer mb-6 hover:text-c-orange mr-4">
-          <Link to="/">HOME</Link>
-        </li>
         <li className="cursor-pointer mb-6 hover:text-c-orange">
           <Link to="/blog">BLOG</Link>
         </li>

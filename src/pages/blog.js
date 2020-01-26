@@ -26,7 +26,7 @@ const Blog = ({ data }) => {
     )
   })
   return (
-    <BlogLayout categories={data.group}>
+    <BlogLayout categories={data.allMarkdownRemark.group}>
       <SEO title="Blog" />
       <div>{blogPosts}</div>
     </BlogLayout>
