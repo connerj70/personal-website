@@ -7,13 +7,13 @@ featuredImage: "../images/highest-paying-programming-jobs/main.png"
 
 ### Question: What are the highest paying programming jobs?
 
-Keep in mind when talking about the highets paying programming jobs I will be assuming the job is based out of the United States of America and the salary is in U.S dollars
+Keep in mind when talking about the highest paying programming jobs I will be assuming the job is based out of the United States of America and the salary is in U.S dollars
 
 ### 1. Enterprise Architect
 
 #### Median Base Salary: \$122,585
 
-<a class="text-blue-500 no-underline- hover:underline" href="https://www.glassdoor.com/List/Highest-Paying-Jobs-LST_KQ0,19.htm">According to glassdoor</a> enterprise architect is the fifth highest paying job in America. They have a median base salary of \$122,585 and there are around 1,555 job openings listed on glassdoor when this post was written (January 25, 2020).
+<a class="text-blue-500 no-underline- hover:underline" href="https://www.glassdoor.com/List/Highest-Paying-Jobs-LST_KQ0,19.htm">According to glassdoor</a> enterprise architect is the fifth highest paying job in America. They have a median base salary of \$122,585 and there are around 1,555 job openings listed on glassdoor as of January 25, 2020.
 
 #### Enterprise Architect's Responsibilites
 
@@ -27,7 +27,7 @@ Keep in mind when talking about the highets paying programming jobs I will be as
 
 #### Required Qualifications and Expertise
 
-Enterprise architects are required to have a computer science degree or equivalent training and experince. Anywhere from 6 to 10 years of systems architecture with large-scale databasesa and applications is also required.
+Enterprise architects are required to have a computer science degree or equivalent training and experince. Anywhere from 6 to 10 years of systems architecture with large-scale databases and applications is also required.
 
 Entreprise architects should be able to see the "big picture" when discussing and planning the development of architecture, information, technology, and infrastructure.
 
@@ -45,12 +45,12 @@ Entreprise architects should be able to see the "big picture" when discussing an
 
 #### Median Base Salary: $106,436
 
-Solutions architect is currently ranked 13 in highest paying jobs and there are 8,215 job openings available on glassdoor.
+Solutions architect is currently ranked 13th in highest paying jobs and there are 8,215 job openings currently available on glassdoor.
 
 #### Solutions Architect's Responsibilities
 
 <ul class="pl-10 mb-5 mt-5 list-disc">
-    <li class="mb-2 text-lg">Support business development efforst through quoting and writing proposals</li>
+    <li class="mb-2 text-lg">Support business development efforts through quoting and writing proposals</li>
     <li class="mb-2 text-lg">Consult with customers to understand project requirements</li>
     <li class="mb-2 text-lg">Ensure architecture security</li>
     <li class="mb-2 text-lg">Provide end-to-end technical guidance and expertise to help solve business problems</li>
@@ -59,7 +59,7 @@ Solutions architect is currently ranked 13 in highest paying jobs and there are 
 #### Required Qualifications and Expertise
 A solutions architect is usually required to have around 5 years of experience in software system architecture as well as software engineering. Many jobs require a bachelors degree, however some will substitute equivalent experience.
 
-Advanced knowledge in atleast two or three compiled languages such as Golang, Rust, Java, or C# is usually required. Expertise in front end technologies such as JavaScript, HTML, and CSS is also a requirement for most jobs. Experience with AWS, and Azure is a plus as well.
+Advanced knowledge in at least two or three compiled languages such as Golang, Rust, Java, or C# is usually required. Expertise in front end technologies such as JavaScript, HTML, and CSS is also a requirement for most jobs. Experience with AWS, and Azure is a plus as well.
 
 #### Hot Cities For Enterprise Architects
 
@@ -83,14 +83,14 @@ Data architect is ranked as the 14th highest paying job in America. With a media
     <li class="mb-2 text-lg">Advise management on approaches to optimize business success</li>
     <li class="mb-2 text-lg">Help define future data requirements</li>
     <li class="mb-2 text-lg">Effectively communicate highly technical information to numerous audiences</li>
-    <li class="mb-2 text-lg">Create and or improve products with using modern technologies and solutions</li>
+    <li class="mb-2 text-lg">Create and or improve products by using modern technologies and solutions</li>
 </ul>
 
 #### Required Qualifications and Expertise
 
 A data architect should have a bachelors degree or equivalent experience. At least 2 years in software development and programming in Java, Scala, Spark, Python, etc. Many jobs require experience with AWS and other cloud computing technologies.
 
-Experience with docker, creating automated solutions and building data pipelines are also heavy sought after skills for potential data architects
+Experience with docker, creating automated solutions and building data pipelines are also heavily sought after skills for potential data architects
 
 #### Hot Cities For Enterprise Architects
 
@@ -112,7 +112,7 @@ A site reliability engineer is responsible for ensuring applications run efficie
 
 <ul class="pl-10 mb-5 mt-5 list-disc">
     <li class="mb-2 text-lg">Provide deep technical troubleshooting</li>
-    <li class="mb-2 text-lg">Use troubleshooting, monitoring and reporting tools to analyze the root cause of serious and impactful tecnical issues</li>
+    <li class="mb-2 text-lg">Use troubleshooting, monitoring and reporting tools to analyze the root cause of serious and impactful technical issues</li>
     <li class="mb-2 text-lg">Work closely with customer care, product management, and engineering to find solutions for customers</li>
 </ul>
 
@@ -124,7 +124,7 @@ A bachelors degree or equivalent experince is usually required. Extensive experi
 
 Experience with AWS and Azure particularly in the areas of security groups, databases and load balancing.
 
-Experince developing applications with common languages such as Python, Java, and Go
+Experience developing applications with common languages such as Python, Java, and Go
 
 #### Hot Cities For Site Reliability Engineers
 
