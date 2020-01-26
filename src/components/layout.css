@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 h3 {
-  font-size: 22px;
+  font-size: 2rem;
   color: #f5ac72;
   font-weight: bold;
   border-bottom: 1px solid #f5ac72;
@@ -13,7 +13,7 @@ h3 {
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 1.1rem;
   color: #f5ac72;
   font-weight: bold;
 }

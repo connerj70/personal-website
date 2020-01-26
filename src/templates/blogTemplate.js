@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import Layout from "../components/layout"
+import BlogLayout from "../components/blog-layout"
 import SEO from "../components/seo"
 import {DiscussionEmbed} from "disqus-react"
 
@@ -17,7 +17,7 @@ export default function Template({
     config: {identifier: frontmatter.title}
   }
   return (
-    <Layout>
+    <BlogLayout>
       <SEO title="Blog" />
       <div className="flex justify-center flex-col m-auto max-w-3xl">
         <div className="blog-post">
@@ -35,7 +35,7 @@ export default function Template({
           <DiscussionEmbed {...disqusConfig} />
         </div>
       </div>
-    </Layout>
+    </BlogLayout>
   )
 }
 

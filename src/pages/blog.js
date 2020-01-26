@@ -2,15 +2,14 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import Layout from "../components/layout"
+import BlogLayout from "../components/blog-layout"
 import SEO from "../components/seo"
 
 const Blog = ({ data }) => {
-  console.log(data)
   let blogPosts = data.allMarkdownRemark.edges.map(post => {
     return (
       <Link to={post.node.frontmatter.path}>
-        <div className="border shadow rounded border-black mt-4 p-8 max-w-2xl">
+        <div className="border shadow rounded border-gray-200 mt-4 p-8 max-w-lg hover:shadow-2xl">
           <Img
             fluid={post.node.frontmatter.featuredImage.childImageSharp.fluid}
           />
@@ -21,11 +20,13 @@ const Blog = ({ data }) => {
     )
   })
   return (
-    <Layout>
+    <BlogLayout>
       <SEO title="Blog" />
-      <h1 className="text-4xl">Blogs</h1>
-      {blogPosts}
-    </Layout>
+      <h1 className="text-4xl">BLOGS</h1>
+      <div className="w-full">
+        {blogPosts}
+      </div>
+    </BlogLayout>
   )
 }
 
@@ -33,7 +34,7 @@ export default Blog
 
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark (sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
