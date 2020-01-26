@@ -2,14 +2,14 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import BlogLayout from "../components/blog-layout"
+import BlogLayout from "../components/blog/blog-layout"
 import SEO from "../components/seo"
 
 const Blog = ({ data }) => {
   let blogPosts = data.allMarkdownRemark.edges.map(post => {
     return (
       <Link to={post.node.frontmatter.path}>
-        <div className="border shadow rounded border-gray-200 mt-4 p-8 max-w-xl hover:shadow-2xl">
+        <div className="border shadow rounded border-gray-200 mt-4 mb-4 p-8 max-w-3xl hover:shadow-2xl">
           <Img
             fluid={post.node.frontmatter.featuredImage.childImageSharp.fluid}
           />
@@ -26,16 +26,9 @@ const Blog = ({ data }) => {
     )
   })
   return (
-    <BlogLayout>
+    <BlogLayout categories={data.group}>
       <SEO title="Blog" />
-      <div className="flex-row">
-        <div>
-          <h1 className="text-4xl text-center text-white p-3 bg-black">
-            The #1 Blog For Entrepreneurial Programmers
-          </h1>
-          {blogPosts}
-        </div>
-      </div>
+      <div>{blogPosts}</div>
     </BlogLayout>
   )
 }
@@ -63,6 +56,10 @@ export const query = graphql`
           }
           excerpt
         }
+      }
+      group(field: frontmatter___tags) {
+        tag: fieldValue
+        totalCount
       }
     }
   }

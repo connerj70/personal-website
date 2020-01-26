@@ -3,6 +3,7 @@ path: "/blog/best-ide-for-golang"
 title: "The Best Ide For Golang"
 date: "2020-01-23"
 featuredImage: "../images/best-ide-for-golang/best-ide-for-golang.jpg"
+tags: ["golang", "programming"]
 ---
 
 ### Question: What is the best IDE to use when writing golang?
@@ -18,6 +19,7 @@ Also, please note that some of the options listed below are not technically IDEs
 Visual studio code is an excellent choice for writing go code. It is developed by Microsoft and is updated regularly. VSCode is technically a text editor, but you can compile and run your code from the built in terminal, and there are many great extensions for golang which allow you to use debugging, syntax highlighing, and autocomplete.
 
 ####Top Features
+
 <ul class="pl-10 mb-5 mt-5 list-disc">
     <li class="mb-2 text-lg">Excellent built in terminal</li>
     <li class="mb-2 text-lg">Light and dark themes</li>
@@ -37,14 +39,14 @@ VSCode has many great themes you can install to customize the look and feel as w
 
 ### Option #2: GoLand
 
-#### Price: $199.00/year
+#### Price: \$199.00/year
 
 Goland is a golang IDE created by JetBrains. It has excellent support for go, including error detection, intelligent code completion, and documentation hints. It has support for git and github, a rich debugger and supports JavaScript, TypeScript, NodeJS, SQL, and Docker.
-
 
 ![VSCode](../images/best-ide-for-golang/goland.png)
 
 ####Top Features
+
 <ul class="pl-10 mb-5 mt-5 list-disc">
     <li class="mb-2 text-lg">Error detection</li>
     <li class="mb-2 text-lg">Debugging</li>
@@ -52,7 +54,7 @@ Goland is a golang IDE created by JetBrains. It has excellent support for go, in
     <li class="mb-2 text-lg">Built in temrinal</li>
 </ul>
 
-JetBrains makes excellent products and Goland is no exception. However, it does come at a hefty price tag. <b>You can get a year license for $199.00.</b> If you'd like to give it a try before buying they do offer a 
+JetBrains makes excellent products and Goland is no exception. However, it does come at a hefty price tag. <b>You can get a year license for \$199.00.</b> If you'd like to give it a try before buying they do offer a
 <a class="text-blue-500 no-underline- hover:underline" href="https://www.jetbrains.com/go/">30 day free trial.</a>
 
 If Goland was free, I would give it a 8/10, but because of the hefty price tag, <b>I'm going to give it a 7/10.</b>
@@ -66,6 +68,7 @@ Atom is an editor developed by GitHub. It has plug-in support for golang, git, a
 ![VSCode](../images/best-ide-for-golang/go.png)
 
 ####Top Features
+
 <ul class="pl-10 mb-5 mt-5 list-disc">
     <li class="mb-2 text-lg">Light and dark themes</li>
     <li class="mb-2 text-lg">Plug-ins for anything you can imagine</li>
@@ -78,5 +81,3 @@ Atom is an excellent, editor but many people in the development community have m
 <b>I'd give atom a 7/10</b>
 
 <a class="text-blue-500 no-underline- hover:underline" href="https://atom.io/">You can download atom here</a>
-
-

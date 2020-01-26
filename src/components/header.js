@@ -41,7 +41,9 @@ const Header = ({ siteTitle }) => {
           X
         </span>
         <ul className="p-10 fixed">
-          <li className="mb-8 lg:text-2xl"><span className="text-c-orange">CONNER</span>JENSEN</li>
+          <li className="mb-8 lg:text-2xl">
+            <span className="text-c-orange">CONNER</span>JENSEN
+          </li>
           {headerLinks.map(item => {
             return (
               <li
@@ -59,6 +61,12 @@ const Header = ({ siteTitle }) => {
               BLOG
             </li>
           </Link>
+          <a
+            className="text-sm text-c-orange"
+            href="https://app.termly.io/document/privacy-policy/e78c30c7-8bc9-4c98-b9b7-201825828752"
+          >
+            Privacy Policy
+          </a>
         </ul>
       </div>
     </header>
