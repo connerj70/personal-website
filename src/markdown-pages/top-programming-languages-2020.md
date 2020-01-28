@@ -2,7 +2,7 @@
 path: "/blog/top-programming-languages-2020"
 title: "Top Programming Languages 2020"
 date: "2020-01-26"
-featuredImage: "../images/top-programming-languages-2020/main.png"
+featuredImage: "../images/top-programming-languages-2020/main2.jpg"
 tags: ["golang", "programming", "python", "javascript"]
 ---
 
@@ -13,6 +13,7 @@ The tech space moves fast, and it can be difficult to determine which programmin
 For the purposes of this article, the "top" programming languages will currently be in high demand and will have a high probability of their demand going up in the future. Not only will the "top" programming languages have high demand, but they will allow you to get a high paying job in an industry where you can grow and develop valuable domain knowledge. This domain knowledge will further contribute to your future success.
 
 #### Criteria for the top programming language
+
 <ul class="pl-10 mb-5 mt-5 list-disc">
     <li class="mb-2 text-lg">High probability for growth in 2020 and beyond</li>
     <li class="mb-2 text-lg">Substantial median salary</li>
@@ -36,3 +37,17 @@ Not only is does python have some of the best projected growth, excellent jobs, 
 #### Python wins our top spot for best programming language to learn in 2020
 
 ### 2. JavaScript
+
+<b>JavaScript has exploded in popularity in the last couple of years.</b> One of the major reasons behind this massive growth is the ability for JavaScript to be used outside of the web with Node.js and the increasing popularity of frameworks such as React, Angular, and Vue.
+
+JavaScript is a jack of all trades language and you can do anything from working on servers, to the front end,and even use it to create user interfaces for "embeded" devices.
+
+#### This chart counts currently open job postings mentioning a particular framework.
+
+![top 2020 programming languages](../images/top-programming-languages-2020/javascript-jobs.png "top programming languages for 2020 and beyond")
+<em class="text-xs">This chart originally produced by <a class="text-blue-500 no-underline- hover:underline" href="https://medium.com/javascript-scene/top-javascript-frameworks-and-topics-to-learn-in-2020-and-the-new-decade-ced6e9d812f9">Eric Elliott</a></em>
+
+As one can see from the above chart, there are thousands of available jobs requiring knowledge of JavaScript frameworks.
+
+Currently the average JavaScript developers salarty is $115,377/year (<a class="text-blue-500 no-underline- hover:underline" href="https://www.indeed.com/career/javascript-developer/salaries">source</a>)
+

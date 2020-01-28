@@ -14,7 +14,7 @@ const Blog = ({ data }) => {
             fluid={post.node.frontmatter.featuredImage.childImageSharp.fluid}
           />
           <h2 className="text-2xl font-bold">{post.node.frontmatter.title}</h2>
-          <span className="italic">{post.node.frontmatter.date}</span>
+          <span className="italic text-sm">{post.node.frontmatter.date}</span>
           <p>{post.node.excerpt}</p>{" "}
           <Link to={post.node.frontmatter.path}>
             <button className="bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">

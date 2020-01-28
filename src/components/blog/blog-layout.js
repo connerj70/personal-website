@@ -11,7 +11,7 @@ import { element } from "prop-types"
 
 const BlogLayout = ({ children, categories }) => {
   const scrollRef = useRef(null)
-  const [showPopup, setShowPopup] = useState(true)
+  // const [showPopup, setShowPopup] = useState(true)
   const [showScroll, setShowScroll] = useState(false)
 
   const backToTop = () => {
@@ -42,7 +42,7 @@ const BlogLayout = ({ children, categories }) => {
     >
       <BlogHeader />
       <BlogIntro />
-      <main className="flex flex-col md:flex-row justify-between">
+      <main className="flex flex-col md:flex-row justify-between p-4 md:p-0">
         <div>{children}</div>
         <BlogSidebar categories={categories} />
       </main>
@@ -50,12 +50,12 @@ const BlogLayout = ({ children, categories }) => {
       {showScroll ? (
         <div
           onClick={() => backToTop()}
-          className="flex justify-center items-center cursor-pointer bg-gray-500 text-white text-3xl w-12 h-12 rounded-full fixed z-10 bottom-0 right-0 mr-5 mb-5 p-5"
+          className="flex justify-center items-center cursor-pointer bg-gray-500 text-white text-3xl w-12 h-12 rounded-full fixed z-10 bottom-0 right-0 mr-5 mb-5"
         >
           ^
         </div>
       ) : null}
-      <BlogPopup show={showPopup} setShowPopup={setShowPopup} />
+      {/* <BlogPopup show={showPopup} setShowPopup={setShowPopup} /> */}
     </div>
   )
 }

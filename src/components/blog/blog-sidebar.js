@@ -5,10 +5,10 @@ import BlogCategories from "./blog-categories"
 
 const BlogSidebar = ({ categories }) => {
   return (
-    <div className="mt-4 mb-4 md:w-2/5 md:ml-4 border-l pl-8">
+    <div className="md:mt-4 md:mb-4 md:w-2/5 md:ml-4 md:border-l md:pl-8">
       {/* <div className="border w-full h-40">Advertisement</div> */}
       <BlogEmailOffer />
-      <BlogCategories categories={categories} />
+      {/* <BlogCategories categories={categories} /> */}
     </div>
   )
 }
