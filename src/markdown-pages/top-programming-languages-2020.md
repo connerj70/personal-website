@@ -52,3 +52,28 @@ With such a large supply of jobs and great pay, currently the average JavaScript
 
 JavaScript, like Python, is an interpreted language with no strict types, so it is easy to pick up. Not only this, but there are thousands of great bootcamps around the country that focus on teaching JavaScript and a couple of JavaScript frameworks. These bootcamps can have you up and running with JavaScript in just a few months.
 
+We would highly recommend checking out <a class="text-blue-500 no-underline- hover:underline" href="https://www.freecodecamp.org/">freeCodeCamp</a> to get your feet wet learning JavaScript.
+
+### 3. Go
+
+Go is a programming language supported by Google. It was made to be easy to write, performant, reliable, and to work well with concurrency. Go is quickly gaining popularity as a go to language for the back end and many companies are switching over. 
+
+Kevin Dangoor, from Khan Academy recently wrote a great post about <a class="text-blue-500 no-underline- hover:underline" href="https://engineering.khanacademy.org/">moving their back end from Python to Go</a>
+
+Go is still a lesser known language and there are definitely not as many jobs available as Python or JavaScript, but if you already know a couple of other languages, learning it can be a great boost to your resume and help you stand out from the crowd. It is also advantages to learn Go while it is still lesser known because when a company does need a Go developer, you will have less compeition for jobs and can use this to your advantage to get a higher salary.
+
+#### Go was recently voted the fifth most loved language, according to a poll on stack overflow
+![Go voted fifth most loved language](../images/top-programming-languages-2020/go.png)
+<em class="text-xs"><a class="text-blue-500 no-underline- hover:underline" href="https://insights.stackoverflow.com/survey/2018/#most-loved-dreaded-and-wanted">stackoverflow source</a></em>
+
+### Conclusion
+
+Our top 3 programming languages to learn for 2020 are:
+
+<ol class="pl-10 mb-5 mt-5 list-decimal">
+    <li class="mb-2 text-lg">Python for its high probability of growth, excellent median salary and the opportunity to work in new and exciting fields</li>
+    <li class="mb-2 text-lg">JavaScript for its increasing ubiquity, ease of use and plethora of jobs</li>
+    <li class="mb-2 text-lg">Go for it's future growth, uniquesness and high salaries.</li>
+</ol>
+
+If your favorite programming language wasn't on our list, please make sure to leave a comment letting us know why it should be. Thanks for reading and I hope you have an incredible 2020!
