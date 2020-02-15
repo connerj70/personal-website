@@ -40,7 +40,7 @@ const Header = ({ siteTitle }) => {
         >
           X
         </span>
-        <ul className="p-2 xl:p-10 fixed">
+        <ul className="p-10 fixed">
           <li className="mb-8 lg:text-2xl">
             <span className="text-c-orange">CONNER</span>JENSEN
           </li>
