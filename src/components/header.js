@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => {
   }
 
   return (
-    <header className="text-white max-w-md lg:flex-grow bg-black">
+    <header className="text-white max-w-sm lg:flex-grow bg-black">
       <div
         className={
           "z-10 fixed w-12 h-12 bg-black flex justify-center items-center rounded-br lg:hidden" +
@@ -40,7 +40,7 @@ const Header = ({ siteTitle }) => {
         >
           X
         </span>
-        <ul className="p-10 fixed">
+        <ul className="p-2 xl:p-10 fixed">
           <li className="mb-8 lg:text-2xl">
             <span className="text-c-orange">CONNER</span>JENSEN
           </li>

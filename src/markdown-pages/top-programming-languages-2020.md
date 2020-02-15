@@ -73,7 +73,7 @@ Our top 3 programming languages to learn for 2020 are:
 <ol class="pl-10 mb-5 mt-5 list-decimal">
     <li class="mb-2 text-lg">Python for its high probability of growth, excellent median salary and the opportunity to work in new and exciting fields</li>
     <li class="mb-2 text-lg">JavaScript for its increasing ubiquity, ease of use and plethora of jobs</li>
-    <li class="mb-2 text-lg">Go for it's future growth, uniquesness and high salaries.</li>
+    <li class="mb-2 text-lg">Go for it's future growth, uniqueness and high salaries.</li>
 </ol>
 
 If your favorite programming language wasn't on our list, please make sure to leave a comment letting us know why it should be. Thanks for reading and I hope you have an incredible 2020!
