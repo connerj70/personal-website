@@ -9,17 +9,18 @@ const Portfolio = () => {
       <h1 className="text-4xl mt-6 underline" id="portfolio">
         Portfolio
       </h1>
-      <a className="text-c-orange" href="/resume.pdf" download>Download Resume</a>
+      <a className="text-c-orange" href="/resume.pdf" download>
+        Download Resume
+      </a>
       <div className="flex flex-col justify-center">
         <div className="lg:max-w-md">
           <h2 className="text-2xl font-semibold text-c-orange mt-4">
-            Agility Ad Platform
+            Agility Ads Self Service Platform
           </h2>
           <p className="mb-2">
-            Agility Ads Platform was built using React.js, and Golang. 
-            This platform helped stremline customer onboarding and
-            it produced $100,000 extra revenue in the first year of its release.
-            </p>
+            This was built using React.js, Golang, and PostgreSQL. It allows
+            businesses to run geo fencing and addressable advertising campaigns.
+          </p>
           <AgilityImage />
         </div>
         <div className="lg:max-w-md">

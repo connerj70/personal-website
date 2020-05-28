@@ -1,17 +1,19 @@
-import React from "react"
+import React, { useState } from "react"
 
 const BlogEmailOffer = () => {
+  let [name, setName] = useState("")
   return (
     <div
       style={{ top: "110px" }}
       className="cool-gradient rounded text-white border p-4 mt-4 w-full mb-4 sticky"
     >
       <div className="w-9/12 lg:w-10/12 m-auto">
+        <h2 className="text-center text-2xl font-bold">Join my</h2>
         <h2 className="text-center text-2xl font-bold">
-          Join thousands of other programmers
+          var list [ ]CoolProgrammer
         </h2>
         <p className="text-black mt-2 text-center">
-          Get programming and business tips, delivered to your inbox
+          Get post notifications and tips delivered to your inbox
         </p>
         <form
           name="emailList"
@@ -30,6 +32,7 @@ const BlogEmailOffer = () => {
               Your Name:{" "}
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                onChange={e => setName(e.target.value)}
                 type="text"
                 name="name"
               />
@@ -50,7 +53,7 @@ const BlogEmailOffer = () => {
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
               type="submit"
             >
-              Subscribe
+              Append {name}
             </button>
           </p>
           <p className="text-xs text-center">
