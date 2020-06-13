@@ -10,7 +10,7 @@ const BlogEmailOffer = () => {
       <div className="w-9/12 lg:w-10/12 m-auto">
         <h2 className="text-center text-2xl font-bold">Join my</h2>
         <h2 className="text-center text-2xl font-bold">
-          var list [ ]CoolProgrammer
+          var list [ ]CoolCoder
         </h2>
         <p className="text-black mt-2 text-center">
           Get post notifications and tips delivered to your inbox
