@@ -16,7 +16,7 @@ const BlogPopup = ({ show, setShowPopup }) => {
           <div className="flex flex-row items-center content-center">
             <GopherImage />
             <span className="text-white text-xl font-bold cursor-pointer">
-              Check it out ☝️
+              Check it out! ☝️
             </span>
           </div>
         </Link>
