@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 const BlogHeader = ({ siteTitle }) => {
   return (
     <header className="flex flex-row justify-between p-4 pt-6 sticky top-0 bg-white z-10 border-b">
-      <Link to="/blog">
+      <Link to="/blog" className="text-2xl">
         <span className="text-c-orange">CONNER</span>JENSEN
       </Link>
       <ul className="pl-4 flex flex-row flex-initial">

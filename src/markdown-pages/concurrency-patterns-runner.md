@@ -3,7 +3,7 @@ path: "/blog/concurrency-patterns-runner"
 title: "Concurrency Patterns In Go: The Runner Pattern"
 date: "2020-06-13"
 featuredImage: "../images/concurrency-patterns-runner/main.jpg"
-tags: ["golang", "programming", "go", "concurrency", "design patterns"]
+tags: ["programming", "go", "concurrency", "design patterns"]
 ---
 
 ### Using Channels To Monitor and Terminate Programs

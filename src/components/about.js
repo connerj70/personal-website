@@ -11,24 +11,24 @@ const About = () => {
         <ConnerImage />
       </div>
       <div className="leading-loose text-left">
-        <h2 className="text-3xl mt-6 text-center lg:text-left lg:text-4xl">
+        <h2 className="text-3xl mt-4 text-center lg:text-left lg:text-4xl">
           Hello! I'm{" "}
           <span className="font-semibold text-c-orange">Conner.</span>
         </h2>
-        <p className="mt-2">
+        <p>
           I'm a{" "}
           <span className="font-semibold text-c-orange">web developer</span>{" "}
-          from Sandy, Utah.
-        </p>
-        <p className="mt-2">
-          I enjoy building clean and performant web applications using{" "}
+          from Sandy, Utah. <br />
+          <br /> I enjoy building clean and performant web applications using{" "}
           <span className="font-semibold text-c-orange">React</span> and{" "}
           <span className="font-semibold text-c-orange">Golang.</span>
-        </p>
-        <p className="mt-2">
+          <br />
+          <br />
           In my free time you can find me hiking, powerlifting, reading,
           spending time with my family, and learning new things about{" "}
-          <span className="font-semibold text-c-orange">computer science</span>{" "}
+          <span className="font-semibold text-c-orange">
+            computer science
+          </span>{" "}
           and{" "}
           <span className="font-semibold text-c-orange">
             software architecture.
