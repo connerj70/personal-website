@@ -2,7 +2,7 @@ import React from "react"
 
 const BlogRecommended = () => {
   return (
-    <div style={{ top: "630px" }} className="p-2 sticky">
+    <div style={{ top: "630px" }} className="p-2 md:sticky">
       <h2 className="text-xl font-semibold bg-gray-300 p-2 pt-3 pb-3">
         ⭐ Recommended Posts
       </h2>

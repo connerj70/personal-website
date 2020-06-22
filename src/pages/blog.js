@@ -24,7 +24,9 @@ const Blog = ({ data }) => {
           <Img
             fluid={post.node.frontmatter.featuredImage.childImageSharp.fluid}
           />
-          <h2 className="text-2xl font-bold">{post.node.frontmatter.title}</h2>
+          <h2 className="text-2xl font-bold mt-2">
+            {post.node.frontmatter.title}
+          </h2>
           <span className="italic text-sm">{post.node.frontmatter.date}</span>
           <span>{tags}</span>
           <p className="mt-2">{post.node.excerpt}</p>{" "}

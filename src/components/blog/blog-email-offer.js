@@ -5,7 +5,7 @@ const BlogEmailOffer = () => {
   return (
     <div
       style={{ top: "110px" }}
-      className="cool-gradient rounded text-white border p-4 mt-4 w-full mb-4 sticky"
+      className="cool-gradient rounded text-white border p-4 mt-4 w-full mb-4 md:sticky"
     >
       <div className="w-9/12 lg:w-10/12 m-auto">
         <h2 className="text-center text-2xl font-bold">Join my</h2>
