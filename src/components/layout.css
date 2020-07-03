@@ -70,3 +70,21 @@ pre {
   display: block;
   word-wrap: break-word;
 }
+
+@keyframes text-bounce {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animated-text {
+  animation-name: text-bounce;
+  animation-duration: 2s;
+}
+
+.transition-header {
+  transition: width 2s;
+}

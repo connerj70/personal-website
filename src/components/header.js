@@ -21,7 +21,7 @@ const Header = ({ siteTitle }) => {
     <header className="text-white max-w-sm lg:flex-grow bg-black">
       <div
         className={
-          "z-10 fixed w-12 h-12 bg-black flex justify-center items-center rounded-br lg:hidden" +
+          "z-10 fixed w-12 h-12 bg-black flex justify-center items-center rounded-br lg:hidden cursor-pointer" +
           (showHeader ? " hidden" : "")
         }
         onClick={() => setShowHeader(true)}
@@ -30,12 +30,12 @@ const Header = ({ siteTitle }) => {
       </div>
       <div
         className={
-          "z-10 fixed w-3/4 md:w-1/4 lg:w-full lg:static h-screen bg-black lg:visible" +
-          (showHeader ? " visible" : " invisible")
+          "z-10 fixed lg:static h-screen bg-black lg:visible" +
+          (showHeader ? " visible w-3/4 md:w-1/4 lg:w-full" : " invisible")
         }
       >
         <span
-          className="z-10 fixed ml-4 mt-4 lg:invisible"
+          className="z-10 fixed ml-4 mt-4 lg:invisible cursor-pointer transition-header"
           onClick={() => setShowHeader(false)}
         >
           X

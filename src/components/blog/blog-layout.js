@@ -37,7 +37,7 @@ const BlogLayout = ({ children, categories }) => {
   return (
     <div
       ref={scrollRef}
-      style={{ maxWidth: "1200px", margin: "0 auto" }}
+      style={{ maxWidth: "1400px", margin: "0 auto" }}
       className="flex flex-col justify-center"
     >
       <BlogHeader />
@@ -55,7 +55,7 @@ const BlogLayout = ({ children, categories }) => {
           Back To Top
         </div>
       ) : null}
-      <BlogPopup show={showPopup} setShowPopup={setShowPopup} />
+      {/* <BlogPopup show={showPopup} setShowPopup={setShowPopup} /> */}
     </div>
   )
 }
