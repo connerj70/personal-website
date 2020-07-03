@@ -2,7 +2,7 @@
 path: "/blog/go-programming-language"
 title: "A Go Programming Language Introduction"
 date: "2020-07-03"
-featuredImage: "../images/go-docker-development-environment/main.jpg"
+featuredImage: "../images/go-programming-language/main.png"
 tags: ["go", "programming"]
 ---
 
