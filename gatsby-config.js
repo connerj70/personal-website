@@ -3,7 +3,7 @@ module.exports = {
     title: `Conner Jensen`,
     description: `Conner Jensen's Personal Website`,
     author: `@connerj70`,
-    siteUrl: "https://connerjensen.com",
+    siteUrl: "https://www.connerjensen.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
