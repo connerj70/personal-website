@@ -3,9 +3,11 @@ module.exports = {
     title: `Conner Jensen`,
     description: `Conner Jensen's Personal Website`,
     author: `@connerj70`,
+    siteUrl: "https://connerjensen.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
