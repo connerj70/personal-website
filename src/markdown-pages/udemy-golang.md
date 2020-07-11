@@ -1,12 +1,10 @@
 ---
-path: "/blog/udemy-golang-courses"
-title: "Top 5 Udemy Golang Courses"
+path: "/blog/my-favorite-golang-courses"
+title: "My Top 5 Golang Courses"
 date: "2020-07-07"
 featuredImage: "../images/udemy-golang/main.jpg"
 tags: ["go", "golang", "udemy", "courses"]
 ---
-
-### What are the top 5 Udemy Golang Courses?
 
 #### <a class="no-underline hover:underline" href="https://greatercommons.com/learn/golang">1. Learn How To Code: Google's Go (golang) Programming Language</a>
 
