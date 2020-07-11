@@ -23,7 +23,7 @@ He takes you through a comprehensive tutorial in how to set up your development 
 
 This course has plenty of hands on exercises which Todd says will help you become a "ninja" golang programmer!
 
-Overall this is a great begineer course, and it's the one I first started watching when I decided to learn golang. I would highly recommend starting with this course.
+Overall this is a great beginner course, and it's the one I first started watching when I decided to learn golang. I would highly recommend starting with this course.
 
 #### <a class="no-underline- hover:underline" href="https://www.udemy.com/course/go-the-complete-developers-guide/learn/lecture/7797284#overview">2. Go: The Complete Developers Guide</a>
 
@@ -35,9 +35,9 @@ Stephan's course is another excellent beginner go programming course.
 
 He starts you off by settting up your environment, then goes on to do a simple hello world example.
 
-In section 3 Stephan teaches you all the basics while building a card game in Go, which is great for people who like to do hands on learning.
+In section 3 Stephan teaches you all the basics while building a card game in Go, which is great for people who learn by best doing.
 
-This is another excellent udemy golang course to pick up if you are just beginning to learn golang.
+Stephan is a great teacher and all his courses are top notch quality.
 
 #### <a class="no-underline- hover:underline" href="https://greatercommons.com/learn/go-language">3. Web Development w/ Google's Go (golang) Programming Language</a>
 
@@ -68,9 +68,9 @@ By <a class="text-blue-500 no-underline- hover:underline" href="https://twitter.
 
 This course is aimed at intermediate to advanced go programmers. You should have a solid understanding of the basics before diving into this course.
 
-Software architecture, interfaces, context, and errors are the main focuses of this course.
+**_Software architecture, interfaces, context, and errors are the main focuses of this course._**
 
-Todd teaches this course with a former student of his named Daniel Hoffman. Daniel programs in Go at work so definitely watch this course if you are looking for a more indepth look into how go is used in a production environment.
+Todd teaches this course with a former student of his named Daniel Hoffman. Daniel programs in Go at work which adds a great perspective of how Go is used in a production environment.
 
 #### <a class="no-underline- hover:underline" href="https://www.udemy.com/course/learn-go-the-complete-bootcamp-course-golang/">5. Go (Golang): The Complete Bootcamp</a>
 
@@ -78,7 +78,7 @@ By Jose Portilla and Inanc Gumus
 
 <a class="text-blue-500 no-underline hover:underline" href="https://www.udemy.com/course/learn-go-the-complete-bootcamp-course-golang/">![Go (Golang): The Complete Bootcamp](../images/udemy-golang/bootcamp.jpg "Go (Golang): The Complete Bootcamp")</a>
 
-This is another great course to put the icing on your golan learning cake. Jose and Inanc dive into **_encoding and decoding json, memory allocation, and maps._**
+This is another great course to put the icing on your golang learning cake. Jose and Inanc dive into **_encoding and decoding json, memory allocation, and maps._**
 
 They then use a few fun projects such as a retro led clock, console animations and a dictionary program to help cement these concepts into your head.
 
@@ -86,9 +86,9 @@ This is a great course to take in order to see how go can be used in small proje
 
 #### Conclusion And Next Steps
 
-After watching a few of these more beginner courses and practicng with Go for a few months, I would suggest checking out some courses from <a class="text-blue-500 no-underline hover:underline" href="https://education.ardanlabs.com/">Ardan Labs</a>
+After watching a few of these beginner courses and practicng with Go for a few months, I would suggest checking out some courses from <a class="text-blue-500 no-underline hover:underline" href="https://education.ardanlabs.com/">Ardan Labs</a>
 
-You hear Todd McLeod mention Bill Kennedy in some of his videos and for good reason. Bill is one of the best Go instructors around and regularly teaches courses to hundreds of professional developers. He dive into much more detail about Go language mechanics, garbage collection, memory allocation, and concurrency.
+You hear Todd McLeod mention Bill Kennedy in some of his videos and for good reason. Bill is one of the best Go instructors around and regularly teaches courses to hundreds of professional developers. He covers Go language mechanics, garbage collection, memory allocation, concurrency and much more.
 
 If you want to check out Ardan Labs content before purchasing the full courses you can watch their full <a class="text-blue-500 no-underline hover:underline" href="https://www.oreilly.com/library/view/ultimate-go-programming/9780135261651/">Ultimate Go Programming</a> course by signing up for a free trial on O'Reilly. I would highly suggest doing this, to get a taste for the content, but to get access to the most up to date content you still need to purchase the course directly from Ardan Labs.
 

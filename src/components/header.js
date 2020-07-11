@@ -61,12 +61,6 @@ const Header = ({ siteTitle }) => {
               BLOG
             </li>
           </Link>
-          <a
-            className="text-sm text-c-orange"
-            href="https://app.termly.io/document/privacy-policy/e78c30c7-8bc9-4c98-b9b7-201825828752"
-          >
-            Privacy Policy
-          </a>
         </ul>
       </div>
     </header>
