@@ -75,7 +75,7 @@ You can no longer just run your local debugger. This can be a pain if you are us
 
 #### Adds another layer of complexity
 
-Developing in Docker adds another layer of complexity you must think about, but if you're app is running in Docker during production it is a good habit to think about this complexity on a regular basis. Not only this but the complexity comes with so many benefits that I think it's worth it in the long run.
+Developing in Docker adds another layer of complexity you must think about, but if your app is running in Docker during production it is a good habit to think about this complexity on a regular basis. Not only this but the complexity comes with so many benefits that I think it's worth it in the long run.
 
 ### Conclusion
 
