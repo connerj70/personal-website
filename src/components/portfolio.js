@@ -2,6 +2,7 @@ import React from "react"
 import CoinImage from "../components/coin-image"
 import ComingImage from "../components/coming-image"
 import AgilityImage from "../components/agility-image"
+import BedsImage from "../components/beds-image"
 
 const Portfolio = () => {
   return (
@@ -9,10 +10,21 @@ const Portfolio = () => {
       <h1 className="text-4xl mt-6 underline" id="portfolio">
         Portfolio
       </h1>
-      <a className="text-c-orange" href="/resume.pdf" download>
+      <a className="text-c-orange" href="/conner-jensen-resume.pdf" download>
         Download Resume
       </a>
+
       <div className="flex flex-col justify-center">
+        <div className="lg:max-w-md">
+          <h2 className="text-2xl font-semibold text-c-orange mt-4">
+            Beds: Habit Tracking App
+          </h2>
+          <p className="mb-2">
+            Beds is built using <span className="text-c-orange">Go, React, and Vue</span>. It allows users to create goals, challenge friends, and win prizes by building habit streaks.
+            <br />
+          </p>
+          <BedsImage />
+        </div>
         <div className="lg:max-w-md">
           <h2 className="text-2xl font-semibold text-c-orange mt-4">
             Agility Ads Self Service Platform
