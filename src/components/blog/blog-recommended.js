@@ -16,10 +16,10 @@ const BlogRecommended = () => {
             Top Programming Languages 2020
           </li>
         </a>
-        <a href="/blog/highest-paying-programming-jobs">
+        <a href="/blog/the_ruby_programming_language_review">
           <li className="p-3 border-b-4 transition duration-300 hover:bg-gray-300">
             {" "}
-            Highest Paying Programming Jobs
+            The Ruby Programming Language Review Part 1
           </li>
         </a>
         <a href="/blog/concurrency-patterns-runner">

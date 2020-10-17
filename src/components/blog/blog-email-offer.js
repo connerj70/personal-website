@@ -8,9 +8,8 @@ const BlogEmailOffer = () => {
       className="cool-gradient rounded text-white border p-4 mt-4 w-full mb-4 md:sticky"
     >
       <div className="w-9/12 lg:w-10/12 m-auto">
-        <h2 className="text-center text-2xl font-bold">Join my</h2>
         <h2 className="text-center text-2xl font-bold">
-          var list [ ]CoolCoder
+        Join My Email List
         </h2>
         <p className="text-black mt-2 text-center">
           Get post notifications and tips delivered to your inbox
