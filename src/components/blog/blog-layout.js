@@ -42,7 +42,7 @@ const BlogLayout = ({ children, categories }) => {
     >
       <BlogHeader />
       <BlogIntro />
-      <main className="flex flex-col md:flex-row justify-between p-4 md:p-0">
+      <main className="flex flex-col md:flex-row justify-between p-4">
         <div>{children}</div>
         <BlogSidebar categories={categories} />
       </main>

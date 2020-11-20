@@ -57,11 +57,13 @@ This will be useful if you don't want to mutate the old array and you want to ke
 
 If you are using strings not for their content, but as a unique identifier, then you should use a symbol, they are cheaper and immutable by default.
 
-#### Most objects are passsed by reference
+#### Most objects are passsed by reference (pass-reference-by-value)
 
 All objects, except for Fixnum, and Symbol are passed by reference, which means the method they are passed to can mutate them.
 
 Changes made to an object inside a method are visible outside the methods scope.
+
+Ruby actually uses <a class="text-blue-500 no-underline- hover:underline" href="https://robertheaton.com/2014/07/22/is-ruby-pass-by-reference-or-pass-by-value/">pass-reference-by-value</a> semantics, which has some subtle, but important, differences (thanks to <a class="text-blue-500 no-underline- hover:underline" href="https://news.ycombinator.com/user?id=billyruffian">billyruffian</a> for pointing this out).
 
 #### Difference between an Objects **Class** and an Objects **Type**
 
