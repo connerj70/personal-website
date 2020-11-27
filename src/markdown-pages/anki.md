@@ -4,6 +4,7 @@ title: "Improving Long-Term Memory With Anki: Tips For Starting Out"
 date: "2020-10-31"
 featuredImage: "../images/anki/anki.jpg"
 tags: ["memory", "learning"]
+description: "How to use anki to improve your long term memory"
 ---
 
 ### How can you improve your long-term memory?

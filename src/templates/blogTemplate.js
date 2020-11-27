@@ -16,6 +16,7 @@ export default function Template({
   }
   return (
     <BlogLayout categories={data.allMarkdownRemark.group}>
+      <SEO description={frontmatter.description} title={frontmatter.title}/>
       <div className="flex justify-center flex-col m-auto max-w-3xl mt-8">
         <div className="blog-post">
           <Img
@@ -45,6 +46,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path
+        description
         title
         featuredImage {
           childImageSharp {

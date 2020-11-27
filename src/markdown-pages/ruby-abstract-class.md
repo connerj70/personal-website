@@ -4,6 +4,7 @@ title: "Ruby Abstract Classes"
 date: "2020-11-25"
 featuredImage: "../images/ruby-abstract-class/main.jpg"
 tags: ["ruby", "programming"]
+description: "How to create abstract classes in Ruby"
 ---
 
 ### What is an Abstract Class?

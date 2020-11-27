@@ -6,6 +6,7 @@
  */
 
 import React from "react"
+import SEO from './seo'
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -25,6 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <div className="lg:flex">
+      <SEO />
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="flex-col p-10 justify-center items-center">
         <main style={{ margin: "0 auto", maxWidth: "900px" }}>{children}</main>
