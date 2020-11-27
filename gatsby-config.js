@@ -46,6 +46,15 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true,
+        develop: true,
+        tailwind: true,
+        whitelist: ['code', 'pre', 'h1', 'h2', 'h3', 'h4', 'h5', 'a', 'text-blue-500', 'no-underline']
+      }
+    },
     `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-plugin-manifest`,
