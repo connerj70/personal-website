@@ -4,7 +4,7 @@ const BlogEmailOffer = () => {
   let [name, setName] = useState("")
   return (
     <div
-      style={{ top: "110px", maxWidth: "500px", margin: "0 auto" }}
+      style={{ top: "110px", maxWidth: "500px", margin: "0 auto", zIndex: "10" }}
       className="cool-gradient rounded text-white border p-4 mt-4 w-full mb-4 md:sticky"
     >
       <div className="w-9/12 lg:w-10/12 m-auto">
