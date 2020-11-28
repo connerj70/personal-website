@@ -6,7 +6,7 @@ import BlogRecommend from "./blog-recommended"
 
 const BlogSidebar = ({ categories }) => {
   return (
-    <div className="md:mt-4 md:mb-4 md:w-1/3 md:ml-4 md:border-l md:pl-8">
+    <div className="md:mt-4 lg:mb-4 lg:w-1/3 lg:ml-4 lg:border-l lg:pl-8">
       {/* <div className="border w-full h-40">Advertisement</div> */}
       <BlogEmailOffer />
       <BlogRecommend />
