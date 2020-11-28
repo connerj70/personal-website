@@ -53,7 +53,6 @@ module.exports = {
         develop: true,
         tailwind: true,
         whitelist: ['code', 'pre', 'h1', 'h2', 'h3', 'h4', 'h5', 'a', 'text-blue-500', 'no-underline'],
-        content: [path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx,md,mdx}')] // So it scans markdown files
       }
     },
     `gatsby-plugin-smoothscroll`,
