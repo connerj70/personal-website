@@ -76,7 +76,7 @@ To prevent someone from subclassing Soldier, not providing an implementation of 
 
     class Soldier
         def salute(target)
-            raise NotImplementedError.new 'The Soldier#salute method is abstract, an implementation of it must be provided in the subclass'
+            raise NoMethodError.new 'The Soldier#salute method is abstract, an implementation of it must be provided in the subclass'
         end
     end
 
@@ -88,7 +88,5 @@ Now if someone forgets to provide an implementation of the salute method in a su
 Hopefully now you can see how we can get some of the behavior of Java's abstract classes in Ruby and how we can better implement our Ruby abstract classes in order to give users of our api warnings about methods that they must implement in their subclasses.
 
 If you'd like to read more about abstract classes in Ruby and how you can create an AbstractInterface module, then check out this great <a class="text-blue-500 no-underline- hover:underline" href="https://metabates.com/2011/02/07/building-interfaces-and-abstract-classes-in-ruby/">post</a> by Mark Bates.
-
-Also thanks to <a class="text-blue-500 no-underline- hover:underline" href="https://www.reddit.com/user/GeorgeFranklyMathnet">GeorgeFranklyMathnet</a> for informing me about the ```NotImplementedError```, and prompting me to use clearer wording in some places.
 
 As always, thanks for reading and feel free to connect with me on Twitter @connerjensen780
