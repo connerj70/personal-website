@@ -52,7 +52,7 @@ module.exports = {
         printRejected: true,
         develop: true,
         tailwind: true,
-        whitelist: ['code', 'pre', 'h1', 'h2', 'h3', 'h4', 'h5', 'a', 'text-blue-500', 'no-underline'],
+        whitelist: ['code', 'pre', 'h1', 'h2', 'h3', 'h4', 'h5', 'a', 'text-blue-500', 'no-underline', 'blockquote'],
       }
     },
     `gatsby-plugin-smoothscroll`,
