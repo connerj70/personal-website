@@ -10,10 +10,10 @@ const BlogRecommended = () => {
         ⭐ <span className="ml-2">Recommended Posts</span>
       </h2>
       <ul>
-        <a href="/blog/top-programming-languages-2020">
+        <a href="/blog/ruby-abstract-class">
           <li className="p-3 border-b-4 transition duration-300 hover:bg-gray-300">
             {" "}
-            Top Programming Languages 2020
+            Ruby Abstract Classes
           </li>
         </a>
         <a href="/blog/the_ruby_programming_language_review">
