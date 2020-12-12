@@ -57,7 +57,7 @@ These examples are both four lines long and they are simple enough, but I prefer
 
 Looking at the ruby example it feels very much like english. There is no remembering to specify an 'r' as the second parameter to ```open```, and no need to call ```strip()``` on each line.
 
-**I'd imagine that someone who knew neither Ruby or Python would have an easier time understanding the Ruby code example as opposed to the Python example.**
+**I'd imagine that someone who knew neither Ruby or Python would have an easier time understanding the Ruby code example.**
 
 The differences between these examples may seem small, but the way a language handles the small stuff can often times shed light on how things are handled in the language as a whole.
 
@@ -114,7 +114,6 @@ One thing I don't like about Ruby is how you must use the **new** method on the 
 **Python Code Example**
 
     class ExampleClass: 
-
         def __init__(self, a, b): 
             self.a, self.b = a, b
 
@@ -132,8 +131,42 @@ I don't enjoy the name of either Ruby's or Python's constructor. In Ruby, the wo
 **Ruby Code Example** 
 
     begin
-        1+2
+        1 + 2
         raise 'EXCEPTION'
     rescue StandardError => e
         puts "An exception #{e} was raised"
     end
+
+This is pretty a pretty standard try catch block, but there are some cool things you can do with Ruby error handling, such as omitting the begin block in a method.
+
+    def method_that_raises_exception
+        raise 'EXCEPTION'
+    rescue StandardError => e
+        puts "An exception #{e} was raised"
+    end
+
+I quite like this syntax as I think it cleans up the method body and makes it clear where exception handling code begins and the "real" body of the function ends.
+
+**Python Code Example**
+
+    try:
+        1 + 1
+        raise Exception("EXCEPION")
+    except Exception as e:
+        print(e)
+
+I prefer the arrow syntax (=>) Ruby uses to give the exception a name over Python's use of as. I also like how in Ruby you can raise a StandardError by just saying ```raise 'What you want your exception to say'``` without having to specify the error class. 
+
+The keywords of begin/rescue also flow better than try/except and the intent would be clearer to the naive reader.
+
+#### Conclusion
+
+Hopefully you found these Ruby code example and Pyton code example comparisons useful. 
+
+I did not intend to offend anyone who prefers Python, I mearly wanted to demonstrate the expressiveness and power of the Ruby programming language. 
+
+I think Ruby does the small things well, and gives programmers the tools to write code that makes the most sense for their specific situations.
+
+If you are interested in learning more about Ruby I highly recommend checking out this <a class="text-blue-500 no-underline- hover:underline" href="https://www.connerjensen.com/blog/the_ruby_programming_language_review">book</a>.
+
+Thank you very much for reading, feel free to leave a comment or reach out to me via email or twitter.
