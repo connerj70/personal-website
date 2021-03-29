@@ -25,8 +25,10 @@ const About = () => {
           </span>
           <span className="animated-text" style={{ animationDuration: "12s" }}>
             <br /> I enjoy building clean and performant web applications using{" "}
-            <span className="font-semibold text-c-orange">React</span> and{" "}
-            <span className="font-semibold text-c-orange">Golang.</span>
+            <span className="font-semibold text-c-orange">React,</span>{" "}
+            <span className="font-semibold text-c-orange">Golang</span>{" "}
+            <span>and</span>{" "}
+            <span className="font-semibold text-c-orange">Ruby on Rails</span>
           </span>
           <br />
           <br />
