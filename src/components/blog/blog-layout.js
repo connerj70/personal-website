@@ -19,7 +19,6 @@ const BlogLayout = ({ children, categories }) => {
   }
 
   const handleScroll = () => {
-    console.log(scrollRef.current.getBoundingClientRect().top)
     if (scrollRef.current.getBoundingClientRect().top <= -200) {
       setShowScroll(true)
     } else {

@@ -1,9 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 import BlogLayout from "../components/blog/blog-layout"
 import SEO from "../components/seo"
 import { DiscussionEmbed } from "disqus-react"
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
+deckDeckGoHighlightElement();
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -19,12 +21,10 @@ export default function Template({
       <SEO description={frontmatter.description} title={frontmatter.title}/>
       <div className="flex justify-center flex-col m-auto max-w-3xl mt-8">
         <div className="blog-post">
-          <Img
-            fluid={
-              markdownRemark.frontmatter.featuredImage.childImageSharp.fluid
-            }
-          />
-          <h1 className="text-4xl font-bold mt-2">{frontmatter.title}</h1>
+          <GatsbyImage
+            alt={frontmatter.title}
+            image={markdownRemark.frontmatter.featuredImage.childImageSharp.gatsbyImageData} />
+          <h1 className="text-5xl font-bold mt-2">{frontmatter.title}</h1>
           <h2 className="italic">{frontmatter.date}</h2>
           <h2 className="text-xs italic mt-2">Time To Read: <span className="text-c-orange font-bold">{markdownRemark.timeToRead} Minutes</span></h2>
           <h2 className="text-xs italic">Author: <span className="text-c-orange font-bold">Conner Jensen</span></h2>
@@ -32,40 +32,37 @@ export default function Template({
             className="blog-post-content mt-6"
             dangerouslySetInnerHTML={{ __html: html }}
           />
-          <DiscussionEmbed {...disqusConfig} />
+          <DiscussionEmbed {...disqusConfig} shortname=""/>
         </div>
       </div>
     </BlogLayout>
-  )
+  );
 }
 
-export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        path
-        description
-        title
-        featuredImage {
-          childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+export const pageQuery = graphql`query ($path: String!) {
+  markdownRemark(frontmatter: {path: {eq: $path}}) {
+    html
+    frontmatter {
+      date(formatString: "MMMM DD, YYYY")
+      path
+      description
+      title
+      featuredImage {
+        childImageSharp {
+          gatsbyImageData(width: 800, layout: CONSTRAINED)
         }
       }
-      timeToRead
-      wordCount {
-        words
-      }
     }
-    allMarkdownRemark {
-      group(field: frontmatter___tags) {
-        tag: fieldValue
-        totalCount
-      }
+    timeToRead
+    wordCount {
+      words
     }
   }
+  allMarkdownRemark {
+    group(field: frontmatter___tags) {
+      tag: fieldValue
+      totalCount
+    }
+  }
+}
 `

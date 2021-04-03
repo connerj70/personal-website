@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -14,21 +14,16 @@ import Img from "gatsby-image"
  */
 
 const ConnerImage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "images/gopher.png" }) {
-        childImageSharp {
-          # Specify the image processing specifications right in the query.
-          # Makes it trivial to update as your page's design changes.
-          fixed(width: 50, height: 50) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
+  const data = useStaticQuery(graphql`{
+  file(relativePath: {eq: "images/gopher.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 50, height: 50, layout: FIXED)
     }
-  `)
+  }
+}
+`)
 
-  return <Img className="mr-4" fixed={data.file.childImageSharp.fixed} />
+  return <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} className="mr-4" />;
 }
 
 export default ConnerImage

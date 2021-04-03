@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -14,26 +14,22 @@ import Img from "gatsby-image"
  */
 
 const BedsImage = () => {
-    const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "images/beds.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+    const data = useStaticQuery(graphql`{
+  placeholderImage: file(relativePath: {eq: "images/beds.png"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
     }
-  `)
+  }
+}
+`)
 
     return (
-        <a href="https://makeyourbed.io">
-            <Img
-                className="max-w-md"
-                fluid={data.placeholderImage.childImageSharp.fluid}
-            />
-        </a>
-    )
+      <a href="https://makeyourbed.io">
+          <GatsbyImage
+            image={data.placeholderImage.childImageSharp.gatsbyImageData}
+            className="max-w-md" />
+      </a>
+    );
 }
 
 export default BedsImage

@@ -8,7 +8,7 @@ h3 {
   font-size: 2rem;
   color: #f5ac72;
   font-weight: bold;
-  border-bottom: 1px solid #f5ac72;
+  border-bottom: 2px solid #f5ad7242;
   margin-bottom: 20px;
 }
 
@@ -54,7 +54,7 @@ blockquote p {
   align-items: center;
 }
 
-pre {
+/* pre {
   background: #f4f4f4;
   border: 1px solid #ddd;
   border-left: 3px solid #f5ac72;
@@ -69,7 +69,7 @@ pre {
   padding: 1em 1.5em;
   display: block;
   word-wrap: break-word;
-}
+} */
 
 @keyframes text-bounce {
   from {
@@ -87,4 +87,14 @@ pre {
 
 .transition-header {
   transition: width 2s;
+}
+
+.gatsby-highlight-code-line {
+  background-color: #feb;
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #f99;
 }
