@@ -26,6 +26,7 @@ const AgilityImage = () => {
   return (
     <a href="https://app.agilityads.com">
       <GatsbyImage
+        alt="Agility Digital Ads Platform Screenshot"
         image={data.placeholderImage.childImageSharp.gatsbyImageData}
         className="max-w-md" />
     </a>

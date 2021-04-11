@@ -25,6 +25,7 @@ const ConnerImage = () => {
 
   return (
     <GatsbyImage
+      alt="Conner Jensen's Portrait"
       image={data.file.childImageSharp.gatsbyImageData}
       className="rounded-full" />
   );

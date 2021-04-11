@@ -26,6 +26,7 @@ const BedsImage = () => {
     return (
       <a href="https://makeyourbed.io">
           <GatsbyImage
+            alt="Make your bed io screenshot"
             image={data.placeholderImage.childImageSharp.gatsbyImageData}
             className="max-w-md" />
       </a>

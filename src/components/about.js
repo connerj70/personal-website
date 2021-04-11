@@ -11,28 +11,27 @@ const About = () => {
         <ConnerImage />
       </div>
       <div className="leading-loose text-left">
-        <h2 className="text-3xl mt-4 text-center lg:text-left lg:text-4xl animated-text">
-          Hello! I'm{" "}
-          <span className="font-semibold text-c-orange">Conner.</span>
+        <h2 className="text-3xl mt-4 text-center lg:text-left lg:text-4xl animated-text mb-3">
+          Hey! I'm{" "}
+          <span className="font-semibold text-c-orange">Conner</span>
         </h2>
-        <p>
-          <span className="animated-text" style={{ animationDuration: "6s" }}>
+        <div>
+          <p className="animated-text" style={{ animationDuration: "6s" }}>
             I'm a{" "}
             <span className="font-semibold text-c-orange">
-              software engineer
+              software engineer.
             </span>{" "}
-            from Sandy, Utah. <br />
-          </span>
-          <span className="animated-text" style={{ animationDuration: "12s" }}>
-            <br /> I enjoy building clean and performant web applications using{" "}
+            <br />
+            I love building web applications, and teaching others how to build web apps too.
+          </p>
+          <p className="animated-text" style={{ animationDuration: "12s" }}>
+            I like to use{" "}
             <span className="font-semibold text-c-orange">React,</span>{" "}
             <span className="font-semibold text-c-orange">Golang</span>{" "}
             <span>and</span>{" "}
             <span className="font-semibold text-c-orange">Ruby on Rails</span>
-          </span>
-          <br />
-          <br />
-          <span className="animated-text" style={{ animationDuration: "18s" }}>
+          </p>
+          <p className="animated-text" style={{ animationDuration: "18s" }}>
             In my free time you can find me hiking, powerlifting, reading,
             spending time with my family, and learning new things about{" "}
             <span className="font-semibold text-c-orange">
@@ -42,8 +41,8 @@ const About = () => {
             <span className="font-semibold text-c-orange">
               software architecture.
             </span>
-          </span>
-        </p>
+          </p>
+        </div>
       </div>
     </div>
   )

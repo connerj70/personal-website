@@ -3,15 +3,15 @@ import React, { useState, useEffect, useRef } from "react"
 import BlogHeader from "./blog-header"
 import BlogFooter from "./blog-footer"
 import BlogSidebar from "./blog-sidebar"
-import BlogPopup from "./blog-popup"
+// import BlogPopup from "./blog-popup"
 import BlogIntro from "./blog-intro"
 
 import "./blog.css"
-import { element } from "prop-types"
+// import { element } from "prop-types"
 
 const BlogLayout = ({ children, categories }) => {
   const scrollRef = useRef(null)
-  const [showPopup, setShowPopup] = useState(true)
+  // const [showPopup, setShowPopup] = useState(true)
   const [showScroll, setShowScroll] = useState(false)
 
   const backToTop = () => {

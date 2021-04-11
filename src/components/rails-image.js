@@ -13,11 +13,11 @@ import { GatsbyImage } from "gatsby-plugin-image";
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const ComingImage = () => {
+const RailsImage = () => {
   const data = useStaticQuery(graphql`{
-  placeholderImage: file(relativePath: {eq: "images/coming.jpg"}) {
+  file(relativePath: {eq: "images/rails_icon.png"}) {
     childImageSharp {
-      gatsbyImageData(width: 300, layout: CONSTRAINED)
+      gatsbyImageData(width: 100, height: 140, layout: FIXED)
     }
   }
 }
@@ -25,10 +25,10 @@ const ComingImage = () => {
 
   return (
     <GatsbyImage
-      alt="coming soon placeholder"
-      image={data.placeholderImage.childImageSharp.gatsbyImageData}
-      className="mt-2 max-w-md" />
+      alt="Ruby on Rails logo"
+      image={data.file.childImageSharp.gatsbyImageData}
+      className="" />
   );
 }
 
-export default ComingImage
+export default RailsImage

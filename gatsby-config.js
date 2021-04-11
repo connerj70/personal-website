@@ -13,19 +13,6 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 800,
-            },
-          },
-        ],
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               // Class prefix for <pre> tags containing syntax highlighting;
@@ -90,8 +77,20 @@ module.exports = {
               escapeEntities: {},
             },
           },
+          {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+              path: `${__dirname}/src`,
+            },
+          }
         ],
       },
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `connerjensen.disqus.com`
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -119,16 +118,19 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        printRejected: true,
-        develop: true,
-        tailwind: true,
-        whitelist: ['code', 'pre', 'h1', 'h2', 'h3', 'h4', 'h5', 'a', 'text-blue-500', 'no-underline', 'blockquote'],
-        ignore: ['node_modules/prismjs/themes/prism-solarizedlight.css']
-      }
-    },
+    // COMMENTED THIS OUT BECAUSE IT WAS REMOVING CSS THAT I NEEDED
+    // {
+    //   resolve: `gatsby-plugin-purgecss`,
+    //   options: {
+    //     printRejected: true,
+    //     develop: true,
+    //     tailwind: true,
+    //     purgeCSSOptions: {
+    //       safelist: ['li', 'ul', 'code', 'pre', 'h1', 'h2', 'h3', 'h4', 'h5', 'a', 'text-blue-500', 'no-underline', 'blockquote', 'list-disc'],
+    //     },
+    //     ignore: ['node_modules/prismjs/themes/prism-solarizedlight.css']
+    //   }
+    // },
     `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-plugin-manifest`,

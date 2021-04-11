@@ -7,6 +7,8 @@ import { DiscussionEmbed } from "disqus-react"
 import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 deckDeckGoHighlightElement();
 
+
+
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
@@ -32,7 +34,7 @@ export default function Template({
             className="blog-post-content mt-6"
             dangerouslySetInnerHTML={{ __html: html }}
           />
-          <DiscussionEmbed {...disqusConfig} shortname=""/>
+          <DiscussionEmbed {...disqusConfig} />
         </div>
       </div>
     </BlogLayout>

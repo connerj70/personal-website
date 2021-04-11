@@ -47,6 +47,7 @@ const Header = ({ siteTitle }) => {
           {headerLinks.map(item => {
             return (
               <li
+                key={item}
                 onClick={() => {
                   handleIndexLinkClick(item)
                 }}

@@ -26,6 +26,7 @@ const CoinImage = () => {
   return (
     <a href="http://104.248.66.9/#/">
       <GatsbyImage
+        alt="Image of coincompare clone website"
         image={data.placeholderImage.childImageSharp.gatsbyImageData}
         className="max-w-md" />
     </a>

@@ -16,7 +16,7 @@ const BlogPopup = ({ show, setShowPopup }) => {
           <div className="flex flex-row items-center justify-center content-center text-center">
             <GopherImage />
             <span className="text-white text-xl cursor-pointer bg-blue-500 p-1 pl-2 pr-2 rounded">
-              Check it out ☝️
+              Check it out <span role="img" ariaLabel="up pointer finger">☝️</span>
             </span>
           </div>
         </Link>
