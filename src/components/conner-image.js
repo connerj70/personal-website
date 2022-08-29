@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -14,21 +14,23 @@ import { GatsbyImage } from "gatsby-plugin-image";
  */
 
 const ConnerImage = () => {
-  const data = useStaticQuery(graphql`{
-  file(relativePath: {eq: "images/conner.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(width: 300, height: 300, layout: FIXED)
+  const data = useStaticQuery(graphql`
+    {
+      file(relativePath: { eq: "images/portraitme.png" }) {
+        childImageSharp {
+          gatsbyImageData(width: 300, height: 300, layout: FIXED)
+        }
+      }
     }
-  }
-}
-`)
+  `)
 
   return (
     <GatsbyImage
       alt="Conner Jensen's Portrait"
       image={data.file.childImageSharp.gatsbyImageData}
-      className="rounded-full" />
-  );
+      className="rounded-full"
+    />
+  )
 }
 
 export default ConnerImage

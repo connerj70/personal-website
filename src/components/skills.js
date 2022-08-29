@@ -1,5 +1,5 @@
 import React from "react"
-import RailsImage from './rails-image'
+import RailsImage from "./rails-image"
 
 const Skills = () => {
   return (
@@ -8,18 +8,6 @@ const Skills = () => {
         Skills
       </h1>
       <div>
-        <p>
-          <q className="italic">
-            People only want programmers with good skills. You know, nunchuck
-            skills, bow hunting skills,{" "}
-            <span className="font-semibold text-c-orange">
-              computer hacking
-            </span>{" "}
-            skills.
-          </q>
-          <br />
-          <span className="font-bold">-Napolean Dynamite</span>
-        </p>
         <div className="flex flex-col lg:flex-row items-center justify-center flex-grow-0 mt-6">
           <div className="w-2/6 mt-6 lg:w-1/6 lg:mr-6">
             <svg viewBox="0 0 128 128">

@@ -6,9 +6,9 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Header = ({ siteTitle }) => {
   const [showHeader, setShowHeader] = useState(false)
-  const headerLinks = ["ABOUT", "SKILLS", "PORTFOLIO", "CONTACT"]
+  const headerLinks = ["ABOUT", "PORTFOLIO", "CONTACT"]
 
-  const handleIndexLinkClick = item => {
+  const handleIndexLinkClick = (item) => {
     setShowHeader(false)
     if (window.location.pathname === "/") {
       scrollTo(`#${item.toLowerCase()}`)
@@ -44,7 +44,7 @@ const Header = ({ siteTitle }) => {
           <li className="mb-8 lg:text-2xl">
             <span className="text-c-orange">CONNER</span>JENSEN
           </li>
-          {headerLinks.map(item => {
+          {headerLinks.map((item) => {
             return (
               <li
                 key={item}
