@@ -21,20 +21,10 @@ const Portfolio = () => {
           </h2>
           <p className="mb-2">
             Built to provide users with gas free transactions on the Lukso
-            blockchain
+            blockchain. Built with TypeScript, PostgreSQL, and ethers.js
             <br />
           </p>
           <BatonImage />
-        </div>
-        <div className="lg:max-w-md">
-          <h2 className="text-2xl font-semibold text-c-orange mt-4">
-            Agility Ads Self Service Platform
-          </h2>
-          <p className="mb-2">
-            This was built using React.js, Golang, and PostgreSQL. It allows
-            businesses to run geo fencing and addressable advertising campaigns.
-          </p>
-          <AgilityImage />
         </div>
         <div className="lg:max-w-md">
           <h2 className="text-2xl font-semibold text-c-orange mt-4">

@@ -20,10 +20,11 @@ const About = () => {
             <span className="font-semibold text-c-orange">
               software engineer.
             </span>{" "}
-            <br />I love building web3 apps and services.
+            <br />I love building web apps and services.
           </p>
           <p className="animated-text" style={{ animationDuration: "12s" }}>
             I like to use{" "}
+            <span className="font-semibold text-c-orange">Ruby,</span>{" "}
             <span className="font-semibold text-c-orange">React,</span>{" "}
             <span className="font-semibold text-c-orange">Go,</span>{" "}
             <span className="font-semibold text-c-orange">TypeScript</span>{" "}
@@ -31,12 +32,15 @@ const About = () => {
             <span className="font-semibold text-c-orange">Foundry</span>
           </p>
           <p className="animated-text" style={{ animationDuration: "18s" }}>
-            In my free time you can find me hiking, powerlifting, reading, and
+            In my free time you can find me hiking, working out, reading, and
             learning new things about{" "}
             <span className="font-semibold text-c-orange">
               computer science
             </span>{" "}
-            and <span className="font-semibold text-c-orange">blockchain</span>
+            and{" "}
+            <span className="font-semibold text-c-orange">
+              software development
+            </span>
           </p>
         </div>
       </div>

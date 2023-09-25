@@ -25,11 +25,13 @@ const BatonImage = () => {
   `)
 
   return (
-    <GatsbyImage
-      alt="Baton relayer"
-      image={data.placeholderImage.childImageSharp.gatsbyImageData}
-      className="max-w-md"
-    />
+    <a href="https://www.batonrelayer.com/">
+      <GatsbyImage
+        alt="Baton relayer"
+        image={data.placeholderImage.childImageSharp.gatsbyImageData}
+        className="max-w-md"
+      />
+    </a>
   )
 }
 
