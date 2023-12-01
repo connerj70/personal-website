@@ -1,8 +1,7 @@
 import React from "react"
 import CoinImage from "../components/coin-image"
-import ComingImage from "../components/coming-image"
-import AgilityImage from "../components/agility-image"
 import BatonImage from "./baton-image"
+import YourStoryImage from "./your-story-image"
 
 const Portfolio = () => {
   return (
@@ -14,6 +13,17 @@ const Portfolio = () => {
         Download Resume
       </a>
 
+        <div className="lg:max-w-md">
+          <h2 className="text-2xl font-semibold text-c-orange mt-4">
+            YourStory
+          </h2>
+          <p className="mb-2">
+            YourStory is an interactive choose your own adventure storybook app for kids.
+            It was built with Next.js and TailwindCSS
+            <br />
+          </p>
+          <YourStoryImage />
+        </div>
       <div className="flex flex-col justify-center">
         <div className="lg:max-w-md">
           <h2 className="text-2xl font-semibold text-c-orange mt-4">
