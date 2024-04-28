@@ -7,9 +7,6 @@ const About = () => {
       <h1 className="text-4xl underline mb-4" id="about">
         About
       </h1>
-      <div className="max-w-md">
-        <ConnerImage />
-      </div>
       <div className="leading-loose text-left">
         <h2 className="text-3xl mt-4 text-center lg:text-left lg:text-4xl animated-text mb-3">
           Hey! I'm <span className="font-semibold text-c-orange">Conner</span>
